@@ -1,0 +1,54 @@
+/* CSS to beautify our clock */
+
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add Clock as background */
+.clock_container{
+    position: relative;  /* to make it responsive */
+    width: 40vw;
+    margin: 40px auto;
+    background: url("index1.gif") no-repeat center;
+    background-size: 100%;
+    z-index: -1;
+    height: 40vw;
+}
+
+/* Creating clock hands */
+#hour, #min, #second{
+    position: absolute;
+    border: solid black;
+    background-color: black;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 49%;
+    transform-origin: bottom;
+}
+
+/* Resizing hour hand*/
+#hour{
+    top: 32%;
+    left: 49.2%;
+    width: 0.2%;
+    height: 17%;
+}
+
+/* Resizing minute hand */
+#min{
+    top: 25.85%;
+    left: 49.2%;
+    width: 0.1%;
+    height: 23%;
+}
+
+/* Resizing second Hand */
+#second{
+    top: 22%;
+    left: 49.2%;
+    width: 0.002%;
+    height: 27%;
+}
